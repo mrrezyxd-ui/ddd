@@ -1,0 +1,6 @@
+{
+  "name": "ReachMarket",
+  "description": "Production-ready digital marketplace featuring real Litecoin LTC on-chain payments via BlockCypher 5-second detector, Discord OAuth 2.0 authentication, automated digital delivery, customer portal, and admin management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

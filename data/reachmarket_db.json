@@ -1,0 +1,398 @@
+{
+  "shopSettings": {
+    "id": "shop-settings-1",
+    "shopName": "Reachmart",
+    "shopDescription": "Your premium digital marketplace for instant software, keys, and subscriptions.",
+    "logoUrl": "/logo/reachmarket.svg",
+    "darkLogoUrl": "/logo/reachmarket-dark.svg",
+    "faviconUrl": "/logo/favicon.svg",
+    "supportDiscordUsername": "4gfi",
+    "discordInviteUrl": "https://discord.gg/Reachmarket",
+    "currency": "USD",
+    "ltcToUsdRate": 50.2315,
+    "installationComplete": true,
+    "setupDate": "2026-08-27T15:41:51.765Z",
+    "announcementText": "⚡ Instant LTC payments with 5-second automatic BlockCypher detection. Support on Discord: 4gfi",
+    "announcementActive": true,
+    "ltcRateUsd": 50.2315,
+    "merchantLtcAddress": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+    "blockcypherToken": ""
+  },
+  "themeSettings": {
+    "id": "theme-settings-1",
+    "activePreset": "obsidian-red",
+    "primaryColor": "#EF4444",
+    "accentColor": "#DC2626",
+    "surfaceColor": "#18181B",
+    "backgroundColor": "#09090B",
+    "textColor": "#F4F4F5",
+    "mutedColor": "#A1A1AA",
+    "borderColor": "#27272A",
+    "radius": 12,
+    "enableCustomCursor": true,
+    "customCss": ""
+  },
+  "admins": [
+    {
+      "id": "admin-1787845311763-dwzl",
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "passwordHash": "$2b$10$6DGS64CDR8tufAeeRNUsseJc21Ga24hg9YySJNrJ40509IttbWkuG",
+      "roleId": "role-superadmin",
+      "roleName": "Super Admin",
+      "createdAt": "2026-08-27T15:41:51.763Z",
+      "lastLoginAt": "2026-08-27T15:41:51.763Z"
+    }
+  ],
+  "roles": [
+    {
+      "id": "role-superadmin",
+      "name": "Super Admin",
+      "description": "Full access to all marketplace features and settings",
+      "permissions": [
+        "*"
+      ],
+      "isSystem": true
+    },
+    {
+      "id": "role-manager",
+      "name": "Store Manager",
+      "description": "Manage products, stock, orders, and view analytics",
+      "permissions": [
+        "products.*",
+        "stock.*",
+        "orders.*",
+        "invoices.view",
+        "categories.*",
+        "analytics.view"
+      ],
+      "isSystem": true
+    },
+    {
+      "id": "role-support",
+      "name": "Support Agent",
+      "description": "View orders and respond to customer support tickets",
+      "permissions": [
+        "orders.view",
+        "support.*",
+        "invoices.view"
+      ],
+      "isSystem": true
+    }
+  ],
+  "customers": [],
+  "authConfig": {
+    "emailPasswordEnabled": true,
+    "googleEnabled": false,
+    "googleClientId": "",
+    "googleClientSecret": "",
+    "googleRedirectUri": "http://localhost/callback/google",
+    "discordEnabled": true,
+    "discordClientId": "1528299940839821352",
+    "discordClientSecret": "HENeH6ggq6-XiJR6un4JaeuEwbmhc1kh",
+    "discordRedirectUri": "http://localhost/callback"
+  },
+  "blockCypherConfig": {
+    "merchantAddress": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+    "apiToken": "",
+    "currency": "ltc",
+    "confirmationThreshold": 1,
+    "isConnected": true,
+    "connectionMessage": "BlockCypher 5-Second Real-Time On-Chain Scanner Connected",
+    "lastTestedAt": "2026-08-27T15:41:51.765Z"
+  },
+  "apironeConfig": {
+    "walletId": "",
+    "transferKey": "",
+    "currency": "ltc",
+    "confirmationThreshold": 1,
+    "testMode": true,
+    "isConnected": false,
+    "connectionMessage": "Awaiting wallet configuration"
+  },
+  "categories": [
+    {
+      "id": "cat-software",
+      "name": "Software & Tools",
+      "slug": "software-tools",
+      "description": "Premium developer utilities, desktop tools, and productivity suites.",
+      "icon": "Terminal",
+      "displayOrder": 1,
+      "active": true
+    },
+    {
+      "id": "cat-subscriptions",
+      "name": "Subscriptions & VIP",
+      "slug": "subscriptions",
+      "description": "Digital service access passes, memberships, and premium tiers.",
+      "icon": "Crown",
+      "displayOrder": 2,
+      "active": true
+    },
+    {
+      "id": "cat-keys",
+      "name": "License Keys & Serials",
+      "slug": "license-keys",
+      "description": "Instant 100% authentic activation serials and license codes.",
+      "icon": "Key",
+      "displayOrder": 3,
+      "active": true
+    },
+    {
+      "id": "cat-accounts",
+      "name": "Accounts & Bundles",
+      "slug": "accounts-bundles",
+      "description": "Pre-configured cloud environments, dev accounts, and starter bundles.",
+      "icon": "ShieldCheck",
+      "displayOrder": 4,
+      "active": true
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-1787845412760-agq0",
+      "title": "IDK",
+      "slug": "Best Worst",
+      "shortDescription": "",
+      "fullDescription": "",
+      "priceUsd": 19.99,
+      "priceLtc": 0.398231,
+      "categoryId": "cat-software",
+      "images": [
+        "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "deliveryType": "automatic",
+      "minQuantity": 1,
+      "maxQuantity": 10,
+      "tags": [
+        "software",
+        "lifetime",
+        "instant"
+      ],
+      "featured": false,
+      "active": true,
+      "unlisted": false,
+      "instructions": "Enter your license key in the client dashboard.",
+      "warrantyPeriod": "30-Day Guarantee",
+      "customFields": [],
+      "createdAt": "2026-08-27T15:43:32.760Z",
+      "updatedAt": "2026-08-27T15:43:32.760Z"
+    }
+  ],
+  "stockItems": [
+    {
+      "id": "stk-1787845427168-0-jurk",
+      "productId": "prod-1787845412760-agq0",
+      "content": "asdad",
+      "status": "reserved",
+      "createdAt": "2026-08-27T15:43:47.168Z",
+      "orderId": "ord-1787845436167-joylr",
+      "reservationExpiresAt": "2026-08-27T15:58:56.167Z"
+    },
+    {
+      "id": "stk-1787845427168-1-zveb",
+      "productId": "prod-1787845412760-agq0",
+      "content": "asdad",
+      "status": "reserved",
+      "createdAt": "2026-08-27T15:43:47.168Z",
+      "orderId": "ord-1787845440422-1i569",
+      "reservationExpiresAt": "2026-08-27T15:59:00.422Z"
+    },
+    {
+      "id": "stk-1787845427168-2-irac",
+      "productId": "prod-1787845412760-agq0",
+      "content": "asdad",
+      "status": "available",
+      "createdAt": "2026-08-27T15:43:47.168Z"
+    },
+    {
+      "id": "stk-1787845427168-3-7hid",
+      "productId": "prod-1787845412760-agq0",
+      "content": "asdadasdadasdadasdad",
+      "status": "available",
+      "createdAt": "2026-08-27T15:43:47.168Z"
+    },
+    {
+      "id": "stk-1787845427168-4-h6ml",
+      "productId": "prod-1787845412760-agq0",
+      "content": "asdad",
+      "status": "available",
+      "createdAt": "2026-08-27T15:43:47.168Z"
+    },
+    {
+      "id": "stk-1787845427168-5-moz8",
+      "productId": "prod-1787845412760-agq0",
+      "content": "asdad",
+      "status": "available",
+      "createdAt": "2026-08-27T15:43:47.168Z"
+    }
+  ],
+  "orders": [
+    {
+      "id": "ord-1787845436167-joylr",
+      "orderNumber": "RM-13410",
+      "customerEmail": "admin@gmail.com",
+      "productId": "prod-1787845412760-agq0",
+      "productTitle": "IDK",
+      "quantity": 1,
+      "unitPriceUsd": 19.99,
+      "totalUsd": 19.99,
+      "totalLtc": 0.397957,
+      "currency": "LTC",
+      "status": "pending",
+      "paymentId": "pay-1787845436582-lie2",
+      "paymentAddress": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+      "deliveredItems": [],
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "createdAt": "2026-08-27T15:43:56.583Z"
+    },
+    {
+      "id": "ord-1787845440422-1i569",
+      "orderNumber": "RM-17962",
+      "customerEmail": "admin@gmail.com",
+      "productId": "prod-1787845412760-agq0",
+      "productTitle": "IDK",
+      "quantity": 1,
+      "unitPriceUsd": 19.99,
+      "totalUsd": 19.99,
+      "totalLtc": 0.397957,
+      "currency": "LTC",
+      "status": "pending",
+      "paymentId": "pay-1787845440440-a471",
+      "paymentAddress": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+      "deliveredItems": [],
+      "ipAddress": "127.0.0.1",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36",
+      "createdAt": "2026-08-27T15:44:00.442Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1787845436582-lie2",
+      "orderId": "ord-1787845436167-joylr",
+      "provider": "blockcypher",
+      "currency": "ltc",
+      "address": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+      "amountExpectedLtc": 0.397957,
+      "amountPaidLtc": 0,
+      "amountExpectedUsd": 19.99,
+      "status": "unpaid",
+      "confirmations": 0,
+      "requiredConfirmations": 1,
+      "qrCodeDataUrl": "data:image/png;base64,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",
+      "expiresAt": 1787846336582,
+      "createdAt": 1787845436582,
+      "rawPayload": {
+        "provider": "blockcypher",
+        "address": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+        "amountExpectedLtc": 0.397957,
+        "ltcRate": 50.2315
+      }
+    },
+    {
+      "id": "pay-1787845440440-a471",
+      "orderId": "ord-1787845440422-1i569",
+      "provider": "blockcypher",
+      "currency": "ltc",
+      "address": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+      "amountExpectedLtc": 0.397957,
+      "amountPaidLtc": 0,
+      "amountExpectedUsd": 19.99,
+      "status": "unpaid",
+      "confirmations": 0,
+      "requiredConfirmations": 1,
+      "qrCodeDataUrl": "data:image/png;base64,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",
+      "expiresAt": 1787846340440,
+      "createdAt": 1787845440440,
+      "rawPayload": {
+        "provider": "blockcypher",
+        "address": "LfSfvBVJTWeZFzXcNz6GED67k9hBj8jfcF",
+        "amountExpectedLtc": 0.397957,
+        "ltcRate": 50.2315
+      }
+    }
+  ],
+  "invoices": [],
+  "ledger": [],
+  "payouts": [],
+  "webhooks": [],
+  "webhookLogs": [],
+  "auditLogs": [
+    {
+      "id": "audit-1787845427169-fjbh",
+      "actorType": "admin",
+      "actorId": "admin",
+      "actorName": "Administrator",
+      "action": "STOCK_RESTOCKED",
+      "entityType": "Product",
+      "entityId": "prod-1787845412760-agq0",
+      "details": {
+        "addedCount": 6,
+        "totalStock": 6
+      },
+      "timestamp": "2026-08-27T15:43:47.169Z"
+    },
+    {
+      "id": "audit-1787845412762-idpa",
+      "actorType": "admin",
+      "actorId": "admin-1787845311763-dwzl",
+      "actorName": "admin",
+      "action": "PRODUCT_CREATED",
+      "entityType": "Product",
+      "entityId": "prod-1787845412760-agq0",
+      "details": {
+        "title": "IDK",
+        "priceUsd": 19.99
+      },
+      "timestamp": "2026-08-27T15:43:32.762Z"
+    },
+    {
+      "id": "audit-1787845311770-l7ab",
+      "actorType": "admin",
+      "actorId": "admin-1787845311763-dwzl",
+      "actorName": "admin",
+      "action": "SHOP_SETUP_COMPLETED",
+      "entityType": "ShopSettings",
+      "entityId": "shop-settings-1",
+      "details": {
+        "shopName": "Reachmart",
+        "adminUsername": "admin",
+        "themePreset": "obsidian-red",
+        "apironeConfigured": false
+      },
+      "timestamp": "2026-08-27T15:41:51.770Z"
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "question": "How fast is product delivery after paying with Litecoin?",
+      "answer": "Delivery is 100% automated. As soon as your Litecoin payment registers the required confirmation (default 1 confirmation) on the blockchain via Apirone, your license keys or download links are instantly revealed on the screen and archived in your customer dashboard.",
+      "order": 1,
+      "active": true
+    },
+    {
+      "id": "faq-2",
+      "question": "What happens if I send a partial payment or wrong amount?",
+      "answer": "Our payment processor detects partial amounts automatically and updates the pending balance in real-time. Simply send the remaining LTC to the same address before expiry to complete your order.",
+      "order": 2,
+      "active": true
+    },
+    {
+      "id": "faq-3",
+      "question": "How do I contact customer support?",
+      "answer": "You can open a support ticket directly from our Support page, or contact our head technician on Discord: **4gfi**.",
+      "order": 3,
+      "active": true
+    },
+    {
+      "id": "faq-4",
+      "question": "Are replacements provided if a key does not work?",
+      "answer": "Yes! All digital items come with our guaranteed warranty period. If any item is invalid, reach out via ticket with your Order Number for an instant replacement.",
+      "order": 4,
+      "active": true
+    }
+  ],
+  "supportTickets": []
+}
